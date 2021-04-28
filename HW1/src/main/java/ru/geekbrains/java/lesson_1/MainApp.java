@@ -7,7 +7,12 @@ public class MainApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Здорово, Ленька");
+        printOrange();
+
     }
 
+    public static void printOrange () {
+        System.out.println("Orange");
+
+    }
 }
