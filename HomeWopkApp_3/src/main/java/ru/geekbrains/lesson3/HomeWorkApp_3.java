@@ -35,7 +35,7 @@ public class HomeWorkApp_3 {
         System.out.println();
 
         System.out.println(Arrays.toString(table));
-        System.out.println(Arrays.toString(shiftElementArray(table, 1)));
+        System.out.println(Arrays.toString(shiftElementArray(table, 2)));
     }
 
     public static int[] changeElementArr (int[] arr) {
@@ -114,16 +114,16 @@ public class HomeWorkApp_3 {
     }
 
     public static int[] shiftElementArray(int[] arr, int n) {
-        int b;
+        int[] b = new int[arr.length] ;
         for (int i = 0; i < arr.length; i++) {
             if (i + n < arr.length) {
-                System.out.println("i= "+i +" " +"n= " +n);
-                b = arr[i];
-              arr[i] = arr[i+n];
-              arr[i+n] = b;
-                System.out.println(Arrays.toString(arr));
+                b[i + n] = arr[i];
+            }else {
+                b[i+n- arr.length] = arr[i];
             }
-        } return arr;
+            //System.out.println("i= "+i +" " +"n= " +n);
+            //System.out.println(Arrays.toString(b));
+        } return b;
     }
 
 
