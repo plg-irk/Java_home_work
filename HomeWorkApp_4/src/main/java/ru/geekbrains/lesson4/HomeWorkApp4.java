@@ -9,8 +9,9 @@ public class HomeWorkApp4 {
     public static Random rand = new Random();
 
     // Set the initial data
-    public static final int maxHeigth = 3;
-    public static final int maxWidth = 3;
+    public static final int maxHeigth = 5;
+    public static final int maxWidth = 5;
+    public static final int valWinner = 4;
     public static final String emptyCell = "_";
     public static final String[][] map_XO = new String[maxHeigth][maxWidth];
 
@@ -109,6 +110,7 @@ public class HomeWorkApp4 {
         boolean result_x = false;
         boolean result_y = false;
         boolean result_d = false;
+        int k;
 
         for (int i = 0; i < maxHeigth; i++) {
             if (result_x) {
@@ -138,18 +140,28 @@ public class HomeWorkApp4 {
             }
         }
 
+        k = 0;
         for (int i = 0; i < maxWidth; i++) {
-            if (map_XO[i][i] == str) result_d = true;
-                    else {
+            if (map_XO[i][i] == str) {
+                result_d = true;
+                k ++;
+                if (k == 4) {
+                    break;
+                }
+            }else {
                         result_d = false;
                         break;
                     }
             }
 
+        k = 0;
         if (!result_d) {
             for (int i = 0; i < maxWidth; i++) {
-                if (map_XO[i][maxWidth - i - 1] == str) result_d = true;
-                else {
+                if (map_XO[i][maxWidth - i - 1] == str) {
+                    result_d = true;
+                    k ++;
+                    if (k == 4) break;
+                    }else {
                     result_d = false;
                     break;
                 }
