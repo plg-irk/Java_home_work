@@ -20,7 +20,7 @@ public class HomeWork5 {
                 123456784, 110000, 22);
 
         for (int i = 0; i < 5; i++) {
-            if (arrayEmpl[i].age > 40 )
+            if (arrayEmpl[i].age > 40)
             arrayEmpl[i].printDataEmployee();
         }
 
