@@ -9,5 +9,8 @@
         <module name="HomeWoekApp_5" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HomeWoekApp_5" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>
