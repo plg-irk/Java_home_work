@@ -1,22 +1,24 @@
 package ru.geekbrains.lesson7;
 
-public class Dog extends Animals {
+    public class Plats {
+        static int food;
+        static int food_value;
 
-    protected Dog(String name, String typeAnimals) {
-        super(name, typeAnimals);
-    }
+        public void ValueFood (int food) {
+            System.out.println("Food in plate= " + food);
+        }
 
-    @Override
-    public void runAnimals (int value) {
-        if(value < 500)
-            System.out.println(name + " ran " + value + "m");
-        else System.out.println(name + " cannot run " + value + "m");
-    }
+        public boolean setDecreaseFoot (int food) {
+            if (food_value - food > 0) {
+                food_value -= food;
+                return true;
+            } else {
+                System.out.println("В тарелке мало еды");
+                return false;
+            }
+        }
 
-    @Override
-    public void swimAnimals (int value) {
-        if (value < 10)
-            System.out.println(name + " swam " + value + "m");
-        else System.out.println(name + " cannot swim " + value + "m");
+        public void setIncreaseFoot(int food) {
+            food_value += food;
+        }
     }
-}
