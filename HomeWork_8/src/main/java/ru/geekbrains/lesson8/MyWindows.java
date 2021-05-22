@@ -37,7 +37,9 @@ public class MyWindows extends JFrame {
     private String maxWinLengthPrefix = "Winner length ";
     private JLabel labelWinLength;
 
-    public MyWindows () {
+    private GameMap gameMap;
+
+    MyWindows () {
 
         beginSettingWindows();
         prepareButton();
@@ -45,6 +47,10 @@ public class MyWindows extends JFrame {
         scrollLogPanel();
         prepareSlider();
         prepareSetting();
+
+        gameMap = new GameMap(this);
+
+        add(gameMap);
 
         setVisible(true);
 
@@ -140,7 +146,7 @@ public class MyWindows extends JFrame {
         setResizable(false);
     }
 
-    private void putLog (String msg) {
+    void putLog (String msg) {
         panelLog.append(msg + "\n");
     }
 
