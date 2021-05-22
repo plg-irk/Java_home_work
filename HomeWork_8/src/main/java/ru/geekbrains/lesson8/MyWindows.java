@@ -118,9 +118,12 @@ public class MyWindows extends JFrame {
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                panelLog.setText("");
                 putLog("Start Game" );
                 putLog(mapSizePrefix + "" + sliderMap.getValue());
                 putLog(maxWinLengthPrefix + "" + sliderWin.getValue());
+                gameMap.startGame(sliderMap.getValue(), sliderMap.getValue(), sliderWin.getValue());
+
             }
         });
         btnExit = new JButton("Exit");

@@ -118,11 +118,15 @@ public class GameMap extends JPanel {
                     continue;
                 }
                 if (map[y][x] == human) {
-                    g.setColor(Color.GREEN);
-                    g.fillOval(x * cellWight + 10, y * cellHeight + 10, cellWight - 20, cellHeight - 20);
+                    g.setColor(Color.WHITE);
+                    g.fillArc(x * cellWight + 10, y * cellHeight + 10, cellWight - 20, cellHeight - 20,45,90);
+                    g.setColor(Color.BLUE);
+                    g.fillArc(x * cellWight + 10, y * cellHeight + 10, cellWight - 20, cellHeight - 20,135,135);
+                    g.setColor(Color.RED);
+                    g.fillArc(x * cellWight + 10, y * cellHeight + 10, cellWight - 20, cellHeight - 20,270,135);
                 }
                 if (map[y][x] == ai) {
-                    g.setColor(Color.RED);
+                    g.setColor(Color.GREEN);
                     g.fillRect(x * cellWight + 10, y * cellHeight + 10, cellWight - 20, cellHeight - 20);
                 }
             }
