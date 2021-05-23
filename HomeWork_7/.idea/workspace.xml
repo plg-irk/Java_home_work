@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8a499d-e9f6-4ea3-812e-493832ed9b7c" name="Default Changelist" comment="" />
+
+    <list default="true" id="cc8a499d-e9f6-4ea3-812e-493832ed9b7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/HomeWork_7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork_7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Animals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/HomeWorkApp7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/HomeWorkApp7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Plats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/geekbrains/lesson7/Plats.java" afterDir="false" />
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
